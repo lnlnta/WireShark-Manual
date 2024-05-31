@@ -1,0 +1,64 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=                                                                                               
+                                                                                               
+           .---.                           .--.--.     ,---,                              ,-.  
+          /. ./|  ,--,                    /  /    '. ,--.' |                          ,--/ /|  
+      .--'.  ' ;,--.'|    __  ,-.        |  :  /`. / |  |  :                 __  ,-.,--. :/ |  
+     /__./ \ : ||  |,   ,' ,'/ /|        ;  |  |--`  :  :  :               ,' ,'/ /|:  : ' /   
+ .--'.  '   \' .`--'_   '  | |' | ,---.  |  :  ;_    :  |  |,--.  ,--.--.  '  | |' ||  '  /    
+/___/ \ |    ' ',' ,'|  |  |   ,'/     \  \  \    `. |  :  '   | /       \ |  |   ,''  |  :    
+;   \  \;      :'  | |  '  :  / /    /  |  `----.   \|  |   /' :.--.  .-. |'  :  /  |  |   \   
+ \   ;  `      ||  | :  |  | ' .    ' / |  __ \  \  |'  :  | | | \__\/: . .|  | '   '  : |. \  
+  .   \    .\  ;'  : |__;  : | '   ;   /| /  /`--'  /|  |  ' | : ," .--.; |;  : |   |  | ' \ \ 
+   \   \   ' \ ||  | '.'|  , ; '   |  / |'--'.     / |  :  :_:,'/  /  ,.  ||  , ;   '  : |--'  
+    :   '  |--" ;  :    ;---'  |   :    |  `--'---'  |  | ,'   ;  :   .'   \---'    ;  |,'     
+     \   \ ;    |  ,   /        \   \  /             `--''     |  ,     .-./        '--'       
+      '---"      ---`-'          `----'                         `--`---'                       
+                                                                                               
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+This is a personal help file for the usage of the open-source software "WireShark", you can take
+notes from this, but keep in mind that this document is adapted to myself and you may not understand
+some things
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Filters ¬ 
+
+- Filter by IP
+- - Source;		ip.src == x.x.x.x		[ip.src == 192.168.0.43]
+- - Destination; 	ip.dst == x.x.x.x		[ip.dst == 192.168.0.43]
+
+- Filter by Protocol
+- - General;		protocol			[http], [tcp], etc...
+
+- Filter by Port
+- - 		
+
+- Filter by HTTP request
+- - GET;		http.request.method == X	[http.request.method == GET]
+- - PUT;		http.request.method == X	[http.request.method == PUT]
+- - POST;		http.request.method == X	[http.request.method == POST]
+
+- Combine Filters
+- - Usage; 		x and x				[ip.src == 192.168.0.43 and http]
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Recognized IPs ¬
+
+- 216.239.34.36;	google.com
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Comparasion Operators ¬
+
+- Equal;		==
+- Not equal;		!=
+- Equal all;		===
+- Not equal any;	!==
+- Greater;		>
+- Less;			<
+- Greater or equal;	>=
+- Less or equal;	<=
+- Contains;		contains
+- Matches;		~
